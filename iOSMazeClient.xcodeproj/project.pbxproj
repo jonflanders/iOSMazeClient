@@ -13,6 +13,8 @@
 		93238D7819EF1C4500A09B63 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93238D7719EF1C4500A09B63 /* Images.xcassets */; };
 		93238D7B19EF1C4500A09B63 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93238D7919EF1C4500A09B63 /* LaunchScreen.xib */; };
 		93238D8719EF1C4600A09B63 /* iOSMazeClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93238D8619EF1C4600A09B63 /* iOSMazeClientTests.swift */; };
+		93238D9719EF335000A09B63 /* Mazes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93238D9619EF335000A09B63 /* Mazes.swift */; };
+		93238D9919EF335800A09B63 /* Maze.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93238D9819EF335800A09B63 /* Maze.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		93238D8019EF1C4600A09B63 /* iOSMazeClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSMazeClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93238D8519EF1C4600A09B63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93238D8619EF1C4600A09B63 /* iOSMazeClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSMazeClientTests.swift; sourceTree = "<group>"; };
+		93238D9619EF335000A09B63 /* Mazes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mazes.swift; sourceTree = "<group>"; };
+		93238D9819EF335800A09B63 /* Maze.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Maze.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 		93238D6D19EF1C4500A09B63 /* iOSMazeClient */ = {
 			isa = PBXGroup;
 			children = (
+				93238D9519EF334500A09B63 /* Models */,
 				93238D7019EF1C4500A09B63 /* AppDelegate.swift */,
 				93238D7219EF1C4500A09B63 /* ViewController.swift */,
 				93238D7419EF1C4500A09B63 /* Main.storyboard */,
@@ -110,6 +115,15 @@
 				93238D8519EF1C4600A09B63 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		93238D9519EF334500A09B63 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				93238D9619EF335000A09B63 /* Mazes.swift */,
+				93238D9819EF335800A09B63 /* Maze.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +227,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				93238D7319EF1C4500A09B63 /* ViewController.swift in Sources */,
+				93238D9719EF335000A09B63 /* Mazes.swift in Sources */,
+				93238D9919EF335800A09B63 /* Maze.swift in Sources */,
 				93238D7119EF1C4500A09B63 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +423,7 @@
 				93238D8C19EF1C4600A09B63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		93238D8D19EF1C4600A09B63 /* Build configuration list for PBXNativeTarget "iOSMazeClientTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +432,7 @@
 				93238D8F19EF1C4600A09B63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
