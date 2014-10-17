@@ -15,6 +15,10 @@
 		93238D8719EF1C4600A09B63 /* iOSMazeClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93238D8619EF1C4600A09B63 /* iOSMazeClientTests.swift */; };
 		93238D9719EF335000A09B63 /* Mazes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93238D9619EF335000A09B63 /* Mazes.swift */; };
 		93238D9919EF335800A09B63 /* Maze.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93238D9819EF335800A09B63 /* Maze.swift */; };
+		93238D9B19F0888800A09B63 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93238D9A19F0888800A09B63 /* Cell.swift */; };
+		93238D9D19F08A3B00A09B63 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93238D9C19F08A3B00A09B63 /* Direction.swift */; };
+		93238DA019F08C9E00A09B63 /* CellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93238D9F19F08C9E00A09B63 /* CellController.swift */; };
+		93238DA219F08CB000A09B63 /* ServerConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93238DA119F08CB000A09B63 /* ServerConnection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,10 @@
 		93238D8619EF1C4600A09B63 /* iOSMazeClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSMazeClientTests.swift; sourceTree = "<group>"; };
 		93238D9619EF335000A09B63 /* Mazes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mazes.swift; sourceTree = "<group>"; };
 		93238D9819EF335800A09B63 /* Maze.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Maze.swift; sourceTree = "<group>"; };
+		93238D9A19F0888800A09B63 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		93238D9C19F08A3B00A09B63 /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
+		93238D9F19F08C9E00A09B63 /* CellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellController.swift; sourceTree = "<group>"; };
+		93238DA119F08CB000A09B63 /* ServerConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerConnection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,7 @@
 		93238D6D19EF1C4500A09B63 /* iOSMazeClient */ = {
 			isa = PBXGroup;
 			children = (
+				93238D9E19F08AAE00A09B63 /* ModelControllers */,
 				93238D9519EF334500A09B63 /* Models */,
 				93238D7019EF1C4500A09B63 /* AppDelegate.swift */,
 				93238D7219EF1C4500A09B63 /* ViewController.swift */,
@@ -122,8 +131,19 @@
 			children = (
 				93238D9619EF335000A09B63 /* Mazes.swift */,
 				93238D9819EF335800A09B63 /* Maze.swift */,
+				93238D9A19F0888800A09B63 /* Cell.swift */,
+				93238D9C19F08A3B00A09B63 /* Direction.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		93238D9E19F08AAE00A09B63 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				93238DA119F08CB000A09B63 /* ServerConnection.swift */,
+				93238D9F19F08C9E00A09B63 /* CellController.swift */,
+			);
+			name = ModelControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,10 +246,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93238DA019F08C9E00A09B63 /* CellController.swift in Sources */,
 				93238D7319EF1C4500A09B63 /* ViewController.swift in Sources */,
 				93238D9719EF335000A09B63 /* Mazes.swift in Sources */,
+				93238D9B19F0888800A09B63 /* Cell.swift in Sources */,
 				93238D9919EF335800A09B63 /* Maze.swift in Sources */,
 				93238D7119EF1C4500A09B63 /* AppDelegate.swift in Sources */,
+				93238D9D19F08A3B00A09B63 /* Direction.swift in Sources */,
+				93238DA219F08CB000A09B63 /* ServerConnection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
